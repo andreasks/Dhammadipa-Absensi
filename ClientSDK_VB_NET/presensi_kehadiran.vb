@@ -597,8 +597,7 @@ Public Class presensi_kehadiran
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
-        'Dim serializer As New JavaScriptSerializer()
-        'Dim arrayJson As String = serializer.Serialize(myArray)
+
         connectDatabase()
         Dim edit As String = "select pin, nama, pwd, rfid, privilege, jenis_kelamin, tanggal_lahir, alamat, tlp1, tlp2, wa, email, kategori, ceramah, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, olahraga, baca_parita, diskusi_dhamma, jenis_kendaraan, no_kendaraan, status, tempat_lahir, goldar, nama_buddhist from user"
         xCommand = New MySqlCommand(edit, xConnection)
