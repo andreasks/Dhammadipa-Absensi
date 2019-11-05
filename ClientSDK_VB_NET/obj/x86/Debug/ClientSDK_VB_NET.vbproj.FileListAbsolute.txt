@@ -1,0 +1,60 @@
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.exe.config
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.F_EasylinkSDKClient.resources
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Resources.resources
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.exe
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.pdb
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.xml
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.exe
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.xml
+C:\Users\HP430\Documents\ClientSDK_VB_Net\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.pdb
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.exe.config
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.exe
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.xml
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.pdb
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.exe
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.pdb
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.xml
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\Newtonsoft.Json.pdb
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\Newtonsoft.Json.xml
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbprojResolveAssemblyReference.cache
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.F_EasylinkSDKClient.resources
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Resources.resources
+E:\EasyLinkSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbproj.GenerateResource.Cache
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.exe.config
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.exe
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.xml
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.pdb
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.F_EasylinkSDKClient.resources
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Resources.resources
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbproj.GenerateResource.Cache
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.exe
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.pdb
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\ClientSDK_VB_NET.xml
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\MySql.Data.dll
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\Google.Protobuf.dll
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\bin\Debug\MySql.Data.xml
+C:\Users\HYDTIAN\Downloads\ClientSDK_VB_NET\ClientSDK_VB_NET\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbprojResolveAssemblyReference.cache
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\Google.Protobuf.dll
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\MySql.Data.xml
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbprojResolveAssemblyReference.cache
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.F_EasylinkSDKClient.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Resources.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbproj.GenerateResource.Cache
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.presensi_kehadiran.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.exe.config
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.exe.manifest
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.application
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.exe
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.pdb
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.xml
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.exe.manifest
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.application
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.exe
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.xml
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.pdb
