@@ -84,6 +84,8 @@ Partial Class presensi_kehadiran
         Me.Button7 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -241,7 +243,7 @@ Partial Class presensi_kehadiran
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(159, 48)
+        Me.GroupBox1.Location = New System.Drawing.Point(395, 71)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 8
@@ -496,7 +498,7 @@ Partial Class presensi_kehadiran
         '
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Pengurus", "Umat"})
+        Me.ComboBox2.Items.AddRange(New Object() {"Pengurus", "Umat", "Staff"})
         Me.ComboBox2.Location = New System.Drawing.Point(11, 144)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(142, 21)
@@ -672,7 +674,7 @@ Partial Class presensi_kehadiran
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(77, 120)
+        Me.TextBox1.Location = New System.Drawing.Point(90, 120)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(312, 20)
         Me.TextBox1.TabIndex = 11
@@ -682,9 +684,28 @@ Partial Class presensi_kehadiran
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(12, 123)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(44, 13)
+        Me.Label17.Size = New System.Drawing.Size(72, 13)
         Me.Label17.TabIndex = 12
-        Me.Label17.Text = "Search "
+        Me.Label17.Text = "Search Nama"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(12, 146)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(108, 13)
+        Me.Label18.TabIndex = 13
+        Me.Label18.Text = "Search Jenis Kelamin"
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Items.AddRange(New Object() {"", "A", "B", "O", "AB"})
+        Me.ComboBox5.Location = New System.Drawing.Point(126, 143)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(45, 21)
+        Me.ComboBox5.TabIndex = 14
         '
         'presensi_kehadiran
         '
@@ -709,6 +730,8 @@ Partial Class presensi_kehadiran
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.ComboBox5)
+        Me.Controls.Add(Me.Label18)
         Me.Name = "presensi_kehadiran"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "presensi_kehadiran"
@@ -781,4 +804,6 @@ Partial Class presensi_kehadiran
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
 End Class

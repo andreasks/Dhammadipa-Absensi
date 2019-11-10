@@ -129,34 +129,24 @@ Public Class presensi_kehadiran
 
             xDataSet.Clear()
             DataGridView1.Refresh()
-            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin", xConnection)
+            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin", xConnection)
             xAdapter.Fill(xDataSet, "user")
             'xDataSet.Tables("user").Rows(1).Item(4) = "Sudah Absen"
             xView = xDataSet.Tables("user").DefaultView
             DataGridView1.DataSource = xView
 
-            DataGridView1.Columns.Item(0).HeaderText = "ID"
-            DataGridView1.Columns.Item(1).HeaderText = "Nama"
-            DataGridView1.Columns.Item(2).HeaderText = "Jenis Kendaraan"
-            DataGridView1.Columns.Item(2).Width = 125
-            DataGridView1.Columns.Item(3).Width = 125
-            DataGridView1.Columns.Item(4).Width = 125
-            DataGridView1.Columns.Item(3).HeaderText = "No Kendaraan"
-            DataGridView1.Columns.Item(4).HeaderText = "Status Presensi"
-            'DataGridView1.Rows(2).Cells("scan_date").Value = "Sudah Absen"
-            'For i As Integer = 0 To i < DataGridView1.Rows.Count - 1
-            '    Dim tempor As String = DataGridView1.Rows(i).Cells(4).Value.ToString()
-            '    DataGridView1.Rows(i).Cells(4).Value = "Sudah Absen"
-            '    'Select Case tempor
-            '    '    Case DateTimePicker1.Value.Date.ToString
+            'DataGridView1.Columns.Item(0).HeaderText = "ID"
+            'DataGridView1.Columns.Item(1).HeaderText = "Nama"
+            'DataGridView1.Columns.Item(2).HeaderText = "Jenis Kendaraan"
+            'DataGridView1.Columns.Item(2).Width = 125
+            'DataGridView1.Columns.Item(3).Width = 125
+            'DataGridView1.Columns.Item(4).Width = 125
+            'DataGridView1.Columns.Item(3).HeaderText = "No Kendaraan"
+            'DataGridView1.Columns.Item(4).HeaderText = "Status Presensi"
 
 
-            '    'End Select
-            'Next
-
-
-            DataGridView1.Columns.Item(0).Width = 50
-            DataGridView1.Columns.Item(1).Width = 200
+            'DataGridView1.Columns.Item(0).Width = 50
+            'DataGridView1.Columns.Item(1).Width = 200
 
 
             Try
@@ -170,14 +160,14 @@ Public Class presensi_kehadiran
         Catch ex As Exception
             MsgBox("Periksa Koneksi DataBase")
         End Try
-        
+
 
         xConnection.Close()
     End Sub
 
     Private Sub DataGridView1_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         connectDatabase()
-        If e.ColumnIndex = 0 Or e.ColumnIndex = 1 Or e.ColumnIndex = 2 Or e.ColumnIndex = 3 Or e.ColumnIndex = 4 Or e.ColumnIndex = 5 Then
+        If e.ColumnIndex = 0 Or e.ColumnIndex = 1 Or e.ColumnIndex = 2 Or e.ColumnIndex = 3 Or e.ColumnIndex = 4 Or e.ColumnIndex = 5 Or e.ColumnIndex = 6 Or e.ColumnIndex = 7 Or e.ColumnIndex = 8 Or e.ColumnIndex = 9 Then
             GroupBox1.Visible = True
             If DataGridView1.CurrentRow.Index <> DataGridView1.NewRowIndex Then
 
@@ -218,7 +208,7 @@ Public Class presensi_kehadiran
                     ElseIf kategori = "Umat" Then
                         ComboBox2.SelectedIndex = 1
                     Else
-
+                        ComboBox2.SelectedIndex = 2
                     End If
 
                     Dim minat1 As String, minat2 As String, minat3 As String, minat4 As String, minat5 As String, minat6 As String, minat7 As String, minat8 As String, minat9 As String, minat10 As String
@@ -652,7 +642,7 @@ Public Class presensi_kehadiran
 
             xDataSet.Clear()
             DataGridView1.Refresh()
-            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE nama LIKE '%" & TextBox1.Text & "%' GROUP BY user.pin ", xConnection)
+            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE nama LIKE '%" & TextBox1.Text & "%' GROUP BY user.pin ", xConnection)
             xAdapter.Fill(xDataSet, "user")
 
             xView = xDataSet.Tables("user").DefaultView
@@ -690,4 +680,47 @@ Public Class presensi_kehadiran
     End Sub
 
   
+    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub ComboBox5_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox5.SelectedIndexChanged
+        Try
+            xDataSet.Clear()
+            DataGridView1.Refresh()
+            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE goldar LIKE '%" & ComboBox5.SelectedItem.ToString & "%' GROUP BY user.pin ", xConnection)
+            xAdapter.Fill(xDataSet, "user")
+
+            xView = xDataSet.Tables("user").DefaultView
+            DataGridView1.DataSource = xView
+
+            DataGridView1.Columns.Item(0).HeaderText = "ID"
+            DataGridView1.Columns.Item(1).HeaderText = "Nama"
+            DataGridView1.Columns.Item(2).HeaderText = "Jenis Kendaraan"
+            DataGridView1.Columns.Item(2).Width = 125
+            DataGridView1.Columns.Item(3).Width = 125
+            DataGridView1.Columns.Item(4).Width = 125
+            DataGridView1.Columns.Item(3).HeaderText = "No Kendaraan"
+            DataGridView1.Columns.Item(4).HeaderText = "Status Presensi"
+
+
+            DataGridView1.Columns.Item(0).Width = 50
+            DataGridView1.Columns.Item(1).Width = 200
+
+
+            Try
+                DataGridView1.Columns.Add(btn)
+                btn.HeaderText = "Edit"
+                btn.Text = "Edit"
+                btn.Name = "btn"
+                btn.UseColumnTextForButtonValue = True
+            Catch
+            End Try
+        Catch ex As Exception
+            MsgBox("Periksa Koneksi DataBase")
+        End Try
+
+
+        xConnection.Close()
+    End Sub
 End Class
