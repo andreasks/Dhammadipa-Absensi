@@ -86,6 +86,12 @@ Partial Class presensi_kehadiran
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -243,7 +249,7 @@ Partial Class presensi_kehadiran
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(90, 64)
+        Me.GroupBox1.Location = New System.Drawing.Point(111, 29)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 8
@@ -317,9 +323,9 @@ Partial Class presensi_kehadiran
         Me.CheckBox12.AutoSize = True
         Me.CheckBox12.Location = New System.Drawing.Point(514, 319)
         Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(94, 17)
+        Me.CheckBox12.Size = New System.Drawing.Size(97, 17)
         Me.CheckBox12.TabIndex = 37
-        Me.CheckBox12.Text = "kelas dhamma"
+        Me.CheckBox12.Text = "Kelas Dhamma"
         Me.CheckBox12.UseVisualStyleBackColor = True
         '
         'CheckBox11
@@ -327,9 +333,9 @@ Partial Class presensi_kehadiran
         Me.CheckBox11.AutoSize = True
         Me.CheckBox11.Location = New System.Drawing.Point(360, 319)
         Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(101, 17)
+        Me.CheckBox11.Size = New System.Drawing.Size(59, 17)
         Me.CheckBox11.TabIndex = 36
-        Me.CheckBox11.Text = "diskusi dhamma" & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.CheckBox11.Text = "Donasi"
         Me.CheckBox11.UseVisualStyleBackColor = True
         '
         'ComboBox3
@@ -390,9 +396,9 @@ Partial Class presensi_kehadiran
         Me.CheckBox10.AutoSize = True
         Me.CheckBox10.Location = New System.Drawing.Point(514, 246)
         Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(84, 17)
+        Me.CheckBox10.Size = New System.Drawing.Size(104, 17)
         Me.CheckBox10.TabIndex = 28
-        Me.CheckBox10.Text = "Baca Paritta"
+        Me.CheckBox10.Text = "Pelayanan Umat"
         Me.CheckBox10.UseVisualStyleBackColor = True
         '
         'CheckBox9
@@ -400,9 +406,9 @@ Partial Class presensi_kehadiran
         Me.CheckBox9.AutoSize = True
         Me.CheckBox9.Location = New System.Drawing.Point(514, 283)
         Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(69, 17)
+        Me.CheckBox9.Size = New System.Drawing.Size(78, 17)
         Me.CheckBox9.TabIndex = 27
-        Me.CheckBox9.Text = "Olahraga"
+        Me.CheckBox9.Text = "Keakraban"
         Me.CheckBox9.UseVisualStyleBackColor = True
         '
         'CheckBox8
@@ -480,9 +486,9 @@ Partial Class presensi_kehadiran
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(13, 246)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(103, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(120, 17)
         Me.CheckBox1.TabIndex = 19
-        Me.CheckBox1.Text = "Dhammadesana"
+        Me.CheckBox1.Text = "Check/Uncheck All"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Label10
@@ -693,19 +699,76 @@ Partial Class presensi_kehadiran
         Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(12, 146)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(108, 13)
+        Me.Label18.Size = New System.Drawing.Size(122, 13)
         Me.Label18.TabIndex = 13
-        Me.Label18.Text = "Search Jenis Kelamin"
+        Me.Label18.Text = "Search Golongan Darah"
         '
         'ComboBox5
         '
         Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Items.AddRange(New Object() {"", "A", "B", "O", "AB"})
-        Me.ComboBox5.Location = New System.Drawing.Point(126, 143)
+        Me.ComboBox5.Location = New System.Drawing.Point(140, 143)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(45, 21)
         Me.ComboBox5.TabIndex = 14
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(12, 173)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(108, 13)
+        Me.Label19.TabIndex = 15
+        Me.Label19.Text = "Search Jenis Kelamin"
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Items.AddRange(New Object() {"", "Laki-Laki", "Perempuan"})
+        Me.ComboBox6.Location = New System.Drawing.Point(140, 170)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(102, 21)
+        Me.ComboBox6.TabIndex = 16
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(256, 146)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(46, 13)
+        Me.Label20.TabIndex = 17
+        Me.Label20.Text = "Kategori"
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"", "Pengurus", "Umat", "Staff"})
+        Me.ComboBox7.Location = New System.Drawing.Point(308, 143)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(142, 21)
+        Me.ComboBox7.TabIndex = 45
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(256, 173)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(33, 13)
+        Me.Label21.TabIndex = 46
+        Me.Label21.Text = "Minat"
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Items.AddRange(New Object() {"", "Puja Bakti", "Meditasi", "Pelayanan Umat", "Dana Makan", "Bakti Sosial", "Fang Shen", "Keakraban", "Sunskul", "Bursa", "Donasi", "Kelas Dhamma", "Seminar"})
+        Me.ComboBox8.Location = New System.Drawing.Point(308, 170)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(142, 21)
+        Me.ComboBox8.TabIndex = 47
         '
         'presensi_kehadiran
         '
@@ -732,6 +795,12 @@ Partial Class presensi_kehadiran
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.ComboBox5)
         Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.ComboBox6)
+        Me.Controls.Add(Me.ComboBox7)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.ComboBox8)
         Me.Name = "presensi_kehadiran"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "presensi_kehadiran"
@@ -806,4 +875,10 @@ Partial Class presensi_kehadiran
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
 End Class
