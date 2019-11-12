@@ -7,6 +7,9 @@ Imports System.IO
 Imports System.Text
 Imports ClientSDK_VB_NET
 Imports MySql.Data.MySqlClient
+Imports System.Data
+Imports System.Reflection
+
 
 
 
@@ -104,6 +107,8 @@ Public Class presensi_kehadiran
         Call koneksiBaru()
         isidata2()
         isiData()
+        'isidatadownload()
+
     End Sub
 
     Private Sub isidata2()
@@ -122,6 +127,40 @@ Public Class presensi_kehadiran
             MsgBox("Periksa Koneksi DataBase")
         End Try
        
+    End Sub
+
+
+
+    Private Sub isidatadownload()
+        'Try
+        'connectDatabase()
+        xDataSet.Clear()
+        DataGridView2.Refresh()
+        xAdapter = New MySqlDataAdapter("SELECT pin, nama, jenis_kelamin, tanggal_lahir,  wa, alamat, tlp1, tlp2, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, keakraban, pelayanan_umat, donasi, seminar, kelas_dhamma, jenis_kendaraan, no_kendaraan, tempat_lahir, goldar, nama_buddhist  FROM USER", xConnection)
+        xAdapter.Fill(xDataSet, "user")
+        'xDataSet.Tables("user").Rows(1).Item(4) = "Sudah Absen"
+        xView = xDataSet.Tables("user").DefaultView
+        DataGridView2.DataSource = xView
+
+        'DataGridView1.Columns.Item(0).HeaderText = "ID"
+        'DataGridView1.Columns.Item(1).HeaderText = "Nama"
+        'DataGridView1.Columns.Item(2).HeaderText = "Jenis Kendaraan"
+        'DataGridView1.Columns.Item(2).Width = 125
+        'DataGridView1.Columns.Item(3).Width = 125
+        'DataGridView1.Columns.Item(4).Width = 125
+        'DataGridView1.Columns.Item(3).HeaderText = "No Kendaraan"
+        'DataGridView1.Columns.Item(4).HeaderText = "Status Presensi"
+
+
+        'DataGridView1.Columns.Item(0).Width = 50
+        'DataGridView1.Columns.Item(1).Width = 200
+
+        'Catch ex As Exception
+        'MsgBox("Periksa Koneksi DataBase")
+        'End Try
+
+
+        xConnection.Close()
     End Sub
 
     Private Sub isiData()
@@ -1320,5 +1359,32 @@ Public Class presensi_kehadiran
         End If
 
         
+    End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        isidatadownload()
+        Dim ExcelApp As Object, ExcelBook As Object
+        Dim ExcelSheet As Object
+        Dim i As Integer
+        Dim j As Integer
+        ExcelApp = CreateObject("Excel.Application")
+        ExcelBook = ExcelApp.WorkBooks.Add
+        ExcelSheet = ExcelBook.WorkSheets(1)
+        With ExcelSheet
+            Dim x = 1
+            For Each col As DataGridViewColumn In DataGridView2.Columns
+                .Cells(1, col.Index + 1) = col.HeaderText.ToString
+            Next
+            For i = 1 To Me.DataGridView2.RowCount
+                .cells(i + 1, 1) = Me.DataGridView2.Rows(i - 1).Cells(0).Value
+                For j = 1 To DataGridView2.Columns.Count - 1
+                    .cells(i + 1, j + 1) = DataGridView2.Rows(i - 1).Cells(j).Value
+                Next
+            Next
+        End With
+        ExcelApp.Visible = True
+        ExcelSheet = Nothing
+        ExcelBook = Nothing
+        ExcelApp = Nothing
     End Sub
 End Class

@@ -92,8 +92,11 @@ Partial Class presensi_kehadiran
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Button8 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -249,7 +252,7 @@ Partial Class presensi_kehadiran
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(111, 29)
+        Me.GroupBox1.Location = New System.Drawing.Point(114, 31)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 8
@@ -770,12 +773,30 @@ Partial Class presensi_kehadiran
         Me.ComboBox8.Size = New System.Drawing.Size(142, 21)
         Me.ComboBox8.TabIndex = 47
         '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(846, 115)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(17, 10)
+        Me.DataGridView2.TabIndex = 48
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(760, 187)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(103, 23)
+        Me.Button8.TabIndex = 49
+        Me.Button8.Text = "Save Excel"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'presensi_kehadiran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(890, 531)
+        Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.L_DeviceSN)
@@ -801,12 +822,14 @@ Partial Class presensi_kehadiran
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.ComboBox8)
+        Me.Controls.Add(Me.Button8)
         Me.Name = "presensi_kehadiran"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "presensi_kehadiran"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -881,4 +904,6 @@ Partial Class presensi_kehadiran
     Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
+    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents Button8 As System.Windows.Forms.Button
 End Class
