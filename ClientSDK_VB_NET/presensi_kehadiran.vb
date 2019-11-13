@@ -1813,7 +1813,7 @@ Public Class presensi_kehadiran
             Try
                 xDataSet.Clear()
                 DataGridView1.Refresh()
-                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir.format(shortdate), goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin ", xConnection)
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin ", xConnection)
                 xAdapter.Fill(xDataSet, "user")
 
                 xView = xDataSet.Tables("user").DefaultView
