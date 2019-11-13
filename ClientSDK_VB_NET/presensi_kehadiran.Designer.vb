@@ -22,6 +22,7 @@ Partial Class presensi_kehadiran
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(presensi_kehadiran))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -94,6 +95,8 @@ Partial Class presensi_kehadiran
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,7 +123,7 @@ Partial Class presensi_kehadiran
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(12, 216)
+        Me.Button1.Location = New System.Drawing.Point(613, 216)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(141, 23)
         Me.Button1.TabIndex = 2
@@ -130,7 +133,7 @@ Partial Class presensi_kehadiran
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(12, 245)
+        Me.Button2.Location = New System.Drawing.Point(613, 245)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(141, 23)
         Me.Button2.TabIndex = 3
@@ -252,7 +255,7 @@ Partial Class presensi_kehadiran
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(114, 31)
+        Me.GroupBox1.Location = New System.Drawing.Point(90, 230)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 8
@@ -790,12 +793,33 @@ Partial Class presensi_kehadiran
         Me.Button8.Text = "Save Excel"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(12, 206)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(97, 13)
+        Me.Label22.TabIndex = 50
+        Me.Label22.Text = "Search Bulan Lahir"
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Items.AddRange(New Object() {"", "Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"})
+        Me.ComboBox9.Location = New System.Drawing.Point(140, 203)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox9.TabIndex = 51
+        '
         'presensi_kehadiran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(890, 531)
+        Me.Controls.Add(Me.ComboBox9)
+        Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button6)
@@ -823,6 +847,7 @@ Partial Class presensi_kehadiran
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.ComboBox8)
         Me.Controls.Add(Me.Button8)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "presensi_kehadiran"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "presensi_kehadiran"
@@ -906,4 +931,6 @@ Partial Class presensi_kehadiran
     Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
     Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
 End Class

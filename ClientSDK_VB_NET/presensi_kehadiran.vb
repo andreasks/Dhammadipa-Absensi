@@ -1387,4 +1387,464 @@ Public Class presensi_kehadiran
         ExcelBook = Nothing
         ExcelApp = Nothing
     End Sub
+
+    Private Sub ComboBox9_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox9.SelectedIndexChanged
+        If ComboBox9.SelectedIndex = 1 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 1 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 2 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 2 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 3 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 3 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 4 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 4 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 5 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 5 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 6 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 6 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 7 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 7 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 8 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 8 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 9 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 9 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 10 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 10 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 11 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 11 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        ElseIf ComboBox9.SelectedIndex = 12 Then
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin WHERE MONTH(tanggal_lahir) = 12 GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+        Else
+            Try
+                xDataSet.Clear()
+                DataGridView1.Refresh()
+                xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir.format(shortdate), goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER  LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin ", xConnection)
+                xAdapter.Fill(xDataSet, "user")
+
+                xView = xDataSet.Tables("user").DefaultView
+                DataGridView1.DataSource = xView
+
+                DataGridView1.Columns.Item(0).HeaderText = "ID"
+                DataGridView1.Columns.Item(1).HeaderText = "Nama"
+
+                DataGridView1.Columns.Item(2).Width = 125
+                DataGridView1.Columns.Item(3).Width = 125
+                DataGridView1.Columns.Item(4).Width = 125
+
+                DataGridView1.Columns.Item(0).Width = 50
+                DataGridView1.Columns.Item(1).Width = 200
+
+
+                Try
+                    DataGridView1.Columns.Add(btn)
+                    btn.HeaderText = "Edit"
+                    btn.Text = "Edit"
+                    btn.Name = "btn"
+                    btn.UseColumnTextForButtonValue = True
+                Catch
+                End Try
+            Catch ex As Exception
+                MsgBox("Periksa Koneksi DataBase")
+            End Try
+
+
+            xConnection.Close()
+
+        End If
+    End Sub
 End Class
