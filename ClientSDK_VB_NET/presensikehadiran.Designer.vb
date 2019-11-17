@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class presensi_kehadiran2
+Partial Class presensikehadiran
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,19 +22,19 @@ Partial Class presensi_kehadiran2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(presensi_kehadiran2))
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TB_ServerPort = New System.Windows.Forms.TextBox()
-        Me.L_ServerPort = New System.Windows.Forms.Label()
-        Me.TB_DeviceSN = New System.Windows.Forms.TextBox()
-        Me.TB_ServerIP = New System.Windows.Forms.TextBox()
-        Me.L_DeviceSN = New System.Windows.Forms.Label()
-        Me.L_ServerIP = New System.Windows.Forms.Label()
-        Me.TB_Memo = New System.Windows.Forms.TextBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TB_Memo = New System.Windows.Forms.TextBox()
+        Me.L_ServerIP = New System.Windows.Forms.Label()
+        Me.TB_ServerIP = New System.Windows.Forms.TextBox()
+        Me.L_ServerPort = New System.Windows.Forms.Label()
+        Me.TB_ServerPort = New System.Windows.Forms.TextBox()
+        Me.L_DeviceSN = New System.Windows.Forms.Label()
+        Me.TB_DeviceSN = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TB_Plat = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -50,7 +50,7 @@ Partial Class presensi_kehadiran2
         Me.TB_buddhist = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
@@ -81,136 +81,125 @@ Partial Class presensi_kehadiran2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(784, 60)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(94, 23)
+        Me.Button4.TabIndex = 12
+        Me.Button4.Text = "Upload User"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(784, 94)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(94, 23)
+        Me.Button3.TabIndex = 11
+        Me.Button3.Text = "Upload Presensi"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(669, 94)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(109, 23)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Download Presensi"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(669, 60)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(109, 23)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Download User"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 123)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(866, 397)
+        Me.DataGridView1.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(316, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(255, 17)
-        Me.Label1.TabIndex = 0
+        Me.Label1.TabIndex = 7
         Me.Label1.Text = "VIHARA DHAMADIPPA SURABAYA"
         '
-        'DataGridView1
+        'TB_Memo
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(15, 278)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(863, 245)
-        Me.DataGridView1.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(613, 216)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Download Anggota"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(613, 245)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(141, 23)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Download Presensi"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'TB_ServerPort
-        '
-        Me.TB_ServerPort.Location = New System.Drawing.Point(289, 45)
-        Me.TB_ServerPort.Name = "TB_ServerPort"
-        Me.TB_ServerPort.Size = New System.Drawing.Size(100, 20)
-        Me.TB_ServerPort.TabIndex = 5
-        Me.TB_ServerPort.Text = "7005"
-        '
-        'L_ServerPort
-        '
-        Me.L_ServerPort.AutoSize = True
-        Me.L_ServerPort.Location = New System.Drawing.Point(223, 48)
-        Me.L_ServerPort.Name = "L_ServerPort"
-        Me.L_ServerPort.Size = New System.Drawing.Size(60, 13)
-        Me.L_ServerPort.TabIndex = 4
-        Me.L_ServerPort.Text = "Server Port"
-        '
-        'TB_DeviceSN
-        '
-        Me.TB_DeviceSN.Location = New System.Drawing.Point(77, 79)
-        Me.TB_DeviceSN.Name = "TB_DeviceSN"
-        Me.TB_DeviceSN.Size = New System.Drawing.Size(312, 20)
-        Me.TB_DeviceSN.TabIndex = 3
-        '
-        'TB_ServerIP
-        '
-        Me.TB_ServerIP.Location = New System.Drawing.Point(77, 45)
-        Me.TB_ServerIP.Name = "TB_ServerIP"
-        Me.TB_ServerIP.Size = New System.Drawing.Size(130, 20)
-        Me.TB_ServerIP.TabIndex = 2
-        Me.TB_ServerIP.Text = "169.254.25.190"
-        '
-        'L_DeviceSN
-        '
-        Me.L_DeviceSN.AutoSize = True
-        Me.L_DeviceSN.Location = New System.Drawing.Point(12, 82)
-        Me.L_DeviceSN.Name = "L_DeviceSN"
-        Me.L_DeviceSN.Size = New System.Drawing.Size(59, 13)
-        Me.L_DeviceSN.TabIndex = 1
-        Me.L_DeviceSN.Text = "Device SN"
+        Me.TB_Memo.Location = New System.Drawing.Point(12, 39)
+        Me.TB_Memo.Multiline = True
+        Me.TB_Memo.Name = "TB_Memo"
+        Me.TB_Memo.Size = New System.Drawing.Size(651, 78)
+        Me.TB_Memo.TabIndex = 13
+        Me.TB_Memo.Visible = False
         '
         'L_ServerIP
         '
         Me.L_ServerIP.AutoSize = True
-        Me.L_ServerIP.Location = New System.Drawing.Point(12, 48)
+        Me.L_ServerIP.Location = New System.Drawing.Point(23, 48)
         Me.L_ServerIP.Name = "L_ServerIP"
         Me.L_ServerIP.Size = New System.Drawing.Size(51, 13)
-        Me.L_ServerIP.TabIndex = 0
+        Me.L_ServerIP.TabIndex = 14
         Me.L_ServerIP.Text = "Server IP"
         '
-        'TB_Memo
+        'TB_ServerIP
         '
-        Me.TB_Memo.Location = New System.Drawing.Point(0, 31)
-        Me.TB_Memo.Multiline = True
-        Me.TB_Memo.Name = "TB_Memo"
-        Me.TB_Memo.Size = New System.Drawing.Size(863, 78)
-        Me.TB_Memo.TabIndex = 5
-        Me.TB_Memo.Visible = False
+        Me.TB_ServerIP.Enabled = False
+        Me.TB_ServerIP.Location = New System.Drawing.Point(93, 45)
+        Me.TB_ServerIP.Name = "TB_ServerIP"
+        Me.TB_ServerIP.Size = New System.Drawing.Size(130, 20)
+        Me.TB_ServerIP.TabIndex = 15
+        Me.TB_ServerIP.Text = "169.254.25.190"
         '
-        'Button3
+        'L_ServerPort
         '
-        Me.Button3.Location = New System.Drawing.Point(395, 77)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Update"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.L_ServerPort.AutoSize = True
+        Me.L_ServerPort.Location = New System.Drawing.Point(23, 70)
+        Me.L_ServerPort.Name = "L_ServerPort"
+        Me.L_ServerPort.Size = New System.Drawing.Size(60, 13)
+        Me.L_ServerPort.TabIndex = 16
+        Me.L_ServerPort.Text = "Server Port"
+        '
+        'TB_ServerPort
+        '
+        Me.TB_ServerPort.Enabled = False
+        Me.TB_ServerPort.Location = New System.Drawing.Point(93, 67)
+        Me.TB_ServerPort.Name = "TB_ServerPort"
+        Me.TB_ServerPort.Size = New System.Drawing.Size(100, 20)
+        Me.TB_ServerPort.TabIndex = 17
+        Me.TB_ServerPort.Text = "7005"
+        '
+        'L_DeviceSN
+        '
+        Me.L_DeviceSN.AutoSize = True
+        Me.L_DeviceSN.Location = New System.Drawing.Point(24, 96)
+        Me.L_DeviceSN.Name = "L_DeviceSN"
+        Me.L_DeviceSN.Size = New System.Drawing.Size(59, 13)
+        Me.L_DeviceSN.TabIndex = 18
+        Me.L_DeviceSN.Text = "Device SN"
+        '
+        'TB_DeviceSN
+        '
+        Me.TB_DeviceSN.Enabled = False
+        Me.TB_DeviceSN.Location = New System.Drawing.Point(93, 93)
+        Me.TB_DeviceSN.Name = "TB_DeviceSN"
+        Me.TB_DeviceSN.Size = New System.Drawing.Size(312, 20)
+        Me.TB_DeviceSN.TabIndex = 19
         '
         'GroupBox1
         '
@@ -228,7 +217,7 @@ Partial Class presensi_kehadiran2
         Me.GroupBox1.Controls.Add(Me.TB_buddhist)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.CheckBox10)
         Me.GroupBox1.Controls.Add(Me.CheckBox9)
         Me.GroupBox1.Controls.Add(Me.CheckBox8)
@@ -259,10 +248,10 @@ Partial Class presensi_kehadiran2
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(121, 31)
+        Me.GroupBox1.Location = New System.Drawing.Point(130, 48)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
-        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Edit Data"
         Me.GroupBox1.Visible = False
@@ -392,14 +381,14 @@ Partial Class presensi_kehadiran2
         Me.Button5.Text = "Cancel"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Button6
         '
-        Me.Button4.Location = New System.Drawing.Point(468, 381)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 29
-        Me.Button4.Text = "Save"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button6.Location = New System.Drawing.Point(468, 381)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 29
+        Me.Button6.Text = "Save"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'CheckBox10
         '
@@ -670,235 +659,63 @@ Partial Class presensi_kehadiran2
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Label11"
         '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(760, 216)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(103, 23)
-        Me.Button6.TabIndex = 9
-        Me.Button6.Text = "Upload User"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(760, 245)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(103, 23)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "Upload Presensi"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(84, 7)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(312, 20)
-        Me.TextBox1.TabIndex = 11
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(6, 10)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(72, 13)
-        Me.Label17.TabIndex = 12
-        Me.Label17.Text = "Search Nama"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(6, 33)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(122, 13)
-        Me.Label18.TabIndex = 13
-        Me.Label18.Text = "Search Golongan Darah"
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"", "A", "B", "O", "AB"})
-        Me.ComboBox5.Location = New System.Drawing.Point(134, 30)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(45, 21)
-        Me.ComboBox5.TabIndex = 14
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(6, 60)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(108, 13)
-        Me.Label19.TabIndex = 15
-        Me.Label19.Text = "Search Jenis Kelamin"
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"", "Laki-Laki", "Perempuan"})
-        Me.ComboBox6.Location = New System.Drawing.Point(134, 57)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(102, 21)
-        Me.ComboBox6.TabIndex = 16
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(274, 33)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(46, 13)
-        Me.Label20.TabIndex = 17
-        Me.Label20.Text = "Kategori"
-        '
-        'ComboBox7
-        '
-        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Items.AddRange(New Object() {"", "Pengurus", "Umat", "Staff"})
-        Me.ComboBox7.Location = New System.Drawing.Point(326, 30)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(142, 21)
-        Me.ComboBox7.TabIndex = 45
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(274, 60)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(33, 13)
-        Me.Label21.TabIndex = 46
-        Me.Label21.Text = "Minat"
-        '
-        'ComboBox8
-        '
-        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Items.AddRange(New Object() {"", "Puja Bakti", "Meditasi", "Pelayanan Umat", "Dana Makan", "Bakti Sosial", "Fang Shen", "Keakraban", "Sunskul", "Bursa", "Donasi", "Kelas Dhamma", "Seminar"})
-        Me.ComboBox8.Location = New System.Drawing.Point(326, 57)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(142, 21)
-        Me.ComboBox8.TabIndex = 47
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(846, 115)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(17, 10)
-        Me.DataGridView2.TabIndex = 48
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(760, 187)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(103, 23)
-        Me.Button8.TabIndex = 49
-        Me.Button8.Text = "Save Excel"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(6, 93)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(97, 13)
-        Me.Label22.TabIndex = 50
-        Me.Label22.Text = "Search Bulan Lahir"
-        '
-        'ComboBox9
-        '
-        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Items.AddRange(New Object() {"", "Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"})
-        Me.ComboBox9.Location = New System.Drawing.Point(134, 90)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox9.TabIndex = 51
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label19)
-        Me.GroupBox2.Controls.Add(Me.Label22)
-        Me.GroupBox2.Controls.Add(Me.ComboBox9)
-        Me.GroupBox2.Controls.Add(Me.ComboBox6)
-        Me.GroupBox2.Controls.Add(Me.Label18)
-        Me.GroupBox2.Controls.Add(Me.ComboBox5)
-        Me.GroupBox2.Controls.Add(Me.Label17)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.Label20)
-        Me.GroupBox2.Controls.Add(Me.ComboBox7)
-        Me.GroupBox2.Controls.Add(Me.Label21)
-        Me.GroupBox2.Controls.Add(Me.ComboBox8)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 115)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(531, 140)
-        Me.GroupBox2.TabIndex = 52
-        Me.GroupBox2.TabStop = False
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(15, 278)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(863, 247)
-        Me.DataGridView3.TabIndex = 53
-        '
-        'presensi_kehadiran2
+        'presensikehadiran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(890, 531)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.DataGridView3)
-        Me.Controls.Add(Me.DataGridView2)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.L_DeviceSN)
         Me.Controls.Add(Me.TB_DeviceSN)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.L_ServerPort)
         Me.Controls.Add(Me.TB_ServerPort)
+        Me.Controls.Add(Me.L_ServerPort)
+        Me.Controls.Add(Me.TB_ServerIP)
         Me.Controls.Add(Me.L_ServerIP)
+        Me.Controls.Add(Me.TB_Memo)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TB_ServerIP)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.TB_Memo)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "presensi_kehadiran2"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "presensi_kehadiran"
+        Me.Name = "presensikehadiran"
+        Me.Text = "presensikehadiran"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents TB_ServerPort As System.Windows.Forms.TextBox
-    Friend WithEvents L_ServerPort As System.Windows.Forms.Label
-    Friend WithEvents TB_DeviceSN As System.Windows.Forms.TextBox
-    Friend WithEvents TB_ServerIP As System.Windows.Forms.TextBox
-    Friend WithEvents L_DeviceSN As System.Windows.Forms.Label
-    Friend WithEvents L_ServerIP As System.Windows.Forms.Label
-    Friend WithEvents TB_Memo As System.Windows.Forms.TextBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents TB_Memo As System.Windows.Forms.TextBox
+    Friend WithEvents L_ServerIP As System.Windows.Forms.Label
+    Friend WithEvents TB_ServerIP As System.Windows.Forms.TextBox
+    Friend WithEvents L_ServerPort As System.Windows.Forms.Label
+    Friend WithEvents TB_ServerPort As System.Windows.Forms.TextBox
+    Friend WithEvents L_DeviceSN As System.Windows.Forms.Label
+    Friend WithEvents TB_DeviceSN As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents TB_Plat As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents TB_Tempat As System.Windows.Forms.TextBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox13 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox12 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox11 As System.Windows.Forms.CheckBox
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents TB_buddhist As System.Windows.Forms.TextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents CheckBox10 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
@@ -929,35 +746,4 @@ Partial Class presensi_kehadiran2
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents TB_Tempat As System.Windows.Forms.TextBox
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox13 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox12 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox11 As System.Windows.Forms.CheckBox
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents TB_buddhist As System.Windows.Forms.TextBox
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TB_Plat As System.Windows.Forms.TextBox
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label21 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
-    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Label22 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents DataGridView3 As System.Windows.Forms.DataGridView
 End Class

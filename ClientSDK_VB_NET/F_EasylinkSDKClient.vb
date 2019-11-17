@@ -478,6 +478,6 @@ Public Class F_EasylinkSDKClient
         'Me.Close()
         'Me.Dispose()
         Me.Hide()
-        presensi_kehadiran.Show()
+        presensi_kehadiran2.Show()
     End Sub
 End Class

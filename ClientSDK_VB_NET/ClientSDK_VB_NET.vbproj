@@ -119,6 +119,12 @@
     <Compile Include="F_EasylinkSDKClient.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -135,6 +141,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="presensikehadiran.Designer.vb">
+      <DependentUpon>presensikehadiran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="presensikehadiran.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="presensi_kehadiran.Designer.vb">
       <DependentUpon>presensi_kehadiran.vb</DependentUpon>
     </Compile>
@@ -146,11 +158,17 @@
     <EmbeddedResource Include="F_EasylinkSDKClient.resx">
       <DependentUpon>F_EasylinkSDKClient.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presensikehadiran.resx">
+      <DependentUpon>presensikehadiran.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presensi_kehadiran.resx">
       <DependentUpon>presensi_kehadiran.vb</DependentUpon>

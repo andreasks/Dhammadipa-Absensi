@@ -46,7 +46,6 @@ C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\ob
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.F_EasylinkSDKClient.resources
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Resources.resources
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.vbproj.GenerateResource.Cache
-C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.presensi_kehadiran.resources
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.exe.config
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.exe.manifest
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\bin\Debug\AbsensiDhamadippa.application
@@ -58,3 +57,6 @@ C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\ob
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.exe
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.xml
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\AbsensiDhamadippa.pdb
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.login.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.presensi_kehadiran2.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.presensikehadiran.resources

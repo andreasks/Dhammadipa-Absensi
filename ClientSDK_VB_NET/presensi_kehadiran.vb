@@ -15,7 +15,7 @@ Imports System.Reflection
 
 'Imports System.Web.
 
-Public Class presensi_kehadiran
+Public Class presensi_kehadiran2
     Public conn As MySqlConnection
     Public cmd As MySqlCommand
     Public rd As MySqlDataReader
@@ -51,7 +51,7 @@ Public Class presensi_kehadiran
             Dim responsebody = (New Text.UTF8Encoding).GetString(responsebytes)
             Return responsebody
         End Using
-       
+
     End Function
 
     '//**KONEKSI DATABASE KE MySQL 
@@ -76,6 +76,10 @@ Public Class presensi_kehadiran
         If DBold.State = ConnectionState.Closed Then
             DBold.Open()
         End If
+    End Sub
+
+    Private Sub presensi_kehadiran2_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
+        login.Close()
     End Sub
 
     'Private Sub SaveTemplate(ByVal pin As String, ByVal ser As JObject)
@@ -105,11 +109,32 @@ Public Class presensi_kehadiran
     Private Sub presensi_kehadiran_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         connectDatabase()
         Call koneksiBaru()
+        isidata3()
         isidata2()
         isiData()
+
         'isidatadownload()
 
     End Sub
+
+
+    Private Sub isidata3()
+        Try
+            xDataSet.Clear()
+            DataGridView3.Refresh()
+            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, kategori, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin", xConnection)
+            xAdapter.Fill(xDataSet, "user")
+            xView = xDataSet.Tables("user").DefaultView
+            DataGridView3.DataSource = xView
+
+        Catch ex As Exception
+            MsgBox("Periksa Koneksi DataBase")
+        End Try
+
+
+        xConnection.Close()
+    End Sub
+
 
     Private Sub isidata2()
         Try
@@ -126,7 +151,7 @@ Public Class presensi_kehadiran
         Catch ex As Exception
             MsgBox("Periksa Koneksi DataBase")
         End Try
-       
+
     End Sub
 
 
@@ -170,22 +195,10 @@ Public Class presensi_kehadiran
             DataGridView1.Refresh()
             xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin", xConnection)
             xAdapter.Fill(xDataSet, "user")
-            'xDataSet.Tables("user").Rows(1).Item(4) = "Sudah Absen"
             xView = xDataSet.Tables("user").DefaultView
             DataGridView1.DataSource = xView
 
-            'DataGridView1.Columns.Item(0).HeaderText = "ID"
-            'DataGridView1.Columns.Item(1).HeaderText = "Nama"
-            'DataGridView1.Columns.Item(2).HeaderText = "Jenis Kendaraan"
-            'DataGridView1.Columns.Item(2).Width = 125
-            'DataGridView1.Columns.Item(3).Width = 125
-            'DataGridView1.Columns.Item(4).Width = 125
-            'DataGridView1.Columns.Item(3).HeaderText = "No Kendaraan"
-            'DataGridView1.Columns.Item(4).HeaderText = "Status Presensi"
 
-
-            'DataGridView1.Columns.Item(0).Width = 50
-            'DataGridView1.Columns.Item(1).Width = 200
 
 
             Try
@@ -447,7 +460,7 @@ Public Class presensi_kehadiran
         Catch ex As Exception
             MsgBox("Terjadi Kesalahan")
         End Try
-        
+
 
 
     End Sub
@@ -515,7 +528,7 @@ Public Class presensi_kehadiran
         Catch ex As Exception
             MsgBox("Terjadi Kesalahan")
         End Try
-        
+
 
     End Sub
 
@@ -650,7 +663,7 @@ Public Class presensi_kehadiran
         MsgBox(json2)
 
 
-        
+
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
@@ -715,10 +728,10 @@ Public Class presensi_kehadiran
 
 
         xConnection.Close()
-       
+
     End Sub
 
-  
+
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
@@ -1358,7 +1371,7 @@ Public Class presensi_kehadiran
             xConnection.Close()
         End If
 
-        
+
     End Sub
 
     Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click

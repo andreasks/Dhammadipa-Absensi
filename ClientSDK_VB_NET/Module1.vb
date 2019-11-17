@@ -7,7 +7,7 @@ Module Module1
     Public xView As DataView
     Public xReader As MySqlDataReader
 
-
+    Public op As String
     Public checkedGejala As List(Of String) = New List(Of String)
 
     Public Sub connectDatabase()
