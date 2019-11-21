@@ -259,7 +259,7 @@ Partial Class presensi_kehadiran2
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(121, 31)
+        Me.GroupBox1.Location = New System.Drawing.Point(77, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 8

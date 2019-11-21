@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AbsensiDhamadippa.exe" size="436736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AbsensiDhamadippa.exe" size="500224">
       <assemblyIdentity name="AbsensiDhamadippa" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YWsuzUKob24yqwkZnicQesugdsmbc1flOQRVVZPTiTo=</dsig:DigestValue>
+        <dsig:DigestValue>XyXBaineIKyghGhNWhe4B3xLDNTYZ35fMzo1bg8PKLY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

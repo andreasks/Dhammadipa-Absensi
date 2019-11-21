@@ -641,7 +641,7 @@ Public Class presensi_kehadiran2
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
 
         connectDatabase()
-        Dim edit As String = "select pin, nama, pwd, rfid, privilege, jenis_kelamin, tanggal_lahir, alamat, tlp1, tlp2, wa, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, olahraga, pelayanan_umat, donasi, jenis_kendaraan, no_kendaraan, status, tempat_lahir, goldar, nama_buddhist from user"
+        Dim edit As String = "select pin, nama, pwd, rfid, privilege, jenis_kelamin, tanggal_lahir, alamat, tlp1, tlp2, wa, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, keakraban, pelayanan_umat, donasi, jenis_kendaraan, no_kendaraan, status, tempat_lahir, goldar, nama_buddhist from user"
         xCommand = New MySqlCommand(edit, xConnection)
         xReader = xCommand.ExecuteReader()
         Dim result As New ArrayList()
@@ -658,7 +658,7 @@ Public Class presensi_kehadiran2
         Dim data As New Specialized.NameValueCollection
         data.Add("inputpost", json)
 
-        Dim result_post = SendRequest("http://absensi.fighter.id/absensi-admin/index.php/user/sync_user", data, "POST")
+        Dim result_post = SendRequest("http://absensi.viharadhammadipa.com/index.php/user/sync_user", data, "POST")
         Dim json2 As String = result_post
         MsgBox(json2)
 
@@ -684,7 +684,7 @@ Public Class presensi_kehadiran2
         Dim data As New Specialized.NameValueCollection
         data.Add("inputpost", json)
 
-        Dim result_post = SendRequest("http://absensi.fighter.id/absensi-admin/index.php/user/sync_scanlog", data, "POST")
+        Dim result_post = SendRequest("http://absensi.viharadhammadipa.com/index.php/user/sync_scanlog", data, "POST")
         Dim json2 As String = result_post
         MsgBox(json2)
     End Sub
@@ -1859,5 +1859,9 @@ Public Class presensi_kehadiran2
             xConnection.Close()
 
         End If
+    End Sub
+
+    Private Sub DataGridView3_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
+
     End Sub
 End Class

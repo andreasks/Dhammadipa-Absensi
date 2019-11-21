@@ -81,13 +81,14 @@ Partial Class presensikehadiran
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(784, 60)
+        Me.Button4.Location = New System.Drawing.Point(784, 34)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(94, 23)
         Me.Button4.TabIndex = 12
@@ -96,7 +97,7 @@ Partial Class presensikehadiran
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(784, 94)
+        Me.Button3.Location = New System.Drawing.Point(784, 68)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 23)
         Me.Button3.TabIndex = 11
@@ -105,7 +106,7 @@ Partial Class presensikehadiran
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(669, 94)
+        Me.Button2.Location = New System.Drawing.Point(669, 68)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(109, 23)
         Me.Button2.TabIndex = 10
@@ -114,7 +115,7 @@ Partial Class presensikehadiran
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(669, 60)
+        Me.Button1.Location = New System.Drawing.Point(669, 34)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(109, 23)
         Me.Button1.TabIndex = 9
@@ -248,7 +249,7 @@ Partial Class presensikehadiran
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(130, 48)
+        Me.GroupBox1.Location = New System.Drawing.Point(111, 39)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 20
@@ -659,6 +660,15 @@ Partial Class presensikehadiran
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Label11"
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(669, 93)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(209, 23)
+        Me.Button7.TabIndex = 21
+        Me.Button7.Text = "Manual Absen"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'presensikehadiran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -678,6 +688,7 @@ Partial Class presensikehadiran
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button7)
         Me.Name = "presensikehadiran"
         Me.Text = "presensikehadiran"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -746,4 +757,5 @@ Partial Class presensikehadiran
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

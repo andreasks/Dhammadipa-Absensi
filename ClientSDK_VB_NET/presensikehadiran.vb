@@ -421,7 +421,7 @@ Public Class presensikehadiran
         Dim data As New Specialized.NameValueCollection
         data.Add("inputpost", json)
 
-        Dim result_post = SendRequest("http://absensi.fighter.id/absensi-admin/index.php/user/sync_user", data, "POST")
+        Dim result_post = SendRequest("http://absensi.viharadhammadipa.com/index.php/user/sync_user", data, "POST")
         Dim json2 As String = result_post
         MsgBox(json2)
 
@@ -446,7 +446,7 @@ Public Class presensikehadiran
         Dim data As New Specialized.NameValueCollection
         data.Add("inputpost", json)
 
-        Dim result_post = SendRequest("http://absensi.fighter.id/absensi-admin/index.php/user/sync_scanlog", data, "POST")
+        Dim result_post = SendRequest("http://absensi.viharadhammadipa.com/index.php/user/sync_scanlog", data, "POST")
         Dim json2 As String = result_post
         MsgBox(json2)
     End Sub
@@ -549,6 +549,15 @@ Public Class presensikehadiran
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         GroupBox1.Visible = False
+
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        Me.Dispose()
+        manual_absen.Show()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
 End Class
