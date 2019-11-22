@@ -79,7 +79,7 @@ Public Class presensi_kehadiran2
     End Sub
 
     Private Sub presensi_kehadiran2_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
-        login.Close()
+        Me.Dispose()
     End Sub
 
     'Private Sub SaveTemplate(ByVal pin As String, ByVal ser As JObject)
@@ -107,6 +107,7 @@ Public Class presensi_kehadiran2
 
 
     Private Sub presensi_kehadiran_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.MdiParent = Menu_Admin
         connectDatabase()
         Call koneksiBaru()
         isidata3()
@@ -161,7 +162,7 @@ Public Class presensi_kehadiran2
         'connectDatabase()
         xDataSet.Clear()
         DataGridView2.Refresh()
-        xAdapter = New MySqlDataAdapter("SELECT pin, nama, jenis_kelamin, tanggal_lahir,  wa, alamat, tlp1, tlp2, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, keakraban, pelayanan_umat, donasi, seminar, kelas_dhamma, jenis_kendaraan, no_kendaraan, tempat_lahir, goldar, nama_buddhist  FROM USER", xConnection)
+        xAdapter = New MySqlDataAdapter("SELECT pin, nama, jenis_kelamin, DATE_FORMAT(tanggal_lahir, '%d/%m/%Y'),  wa, alamat, tlp1, tlp2, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, keakraban, pelayanan_umat, donasi, seminar, kelas_dhamma, jenis_kendaraan, no_kendaraan, tempat_lahir, goldar, nama_buddhist  FROM USER", xConnection)
         xAdapter.Fill(xDataSet, "user")
         'xDataSet.Tables("user").Rows(1).Item(4) = "Sudah Absen"
         xView = xDataSet.Tables("user").DefaultView
@@ -193,7 +194,7 @@ Public Class presensi_kehadiran2
 
             xDataSet.Clear()
             DataGridView1.Refresh()
-            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, tanggal_lahir, goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin", xConnection)
+            xAdapter = New MySqlDataAdapter("SELECT user.pin, nama, wa, alamat, kategori, DATE_FORMAT(tanggal_lahir, '%d/%m/%Y'), goldar, jenis_kendaraan, no_kendaraan, IF(MAX(scan_date)=DATE(NOW()),'Hadir', 'Belum')  AS status_kehadiran FROM USER LEFT JOIN scanlog ON user.pin = scanlog.pin GROUP BY user.pin", xConnection)
             xAdapter.Fill(xDataSet, "user")
             xView = xDataSet.Tables("user").DefaultView
             DataGridView1.DataSource = xView

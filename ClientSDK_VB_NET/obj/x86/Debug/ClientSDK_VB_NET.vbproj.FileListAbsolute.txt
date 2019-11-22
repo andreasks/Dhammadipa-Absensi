@@ -61,3 +61,5 @@ C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\ob
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.presensi_kehadiran2.resources
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.presensikehadiran.resources
 C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.manual_absen.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Menu_Admin.resources
+C:\Users\Andreas\Documents\Visual Studio 2010\Projects\DMHDP\ClientSDK_VB_NET\obj\x86\Debug\ClientSDK_VB_NET.Absensi_Staff.resources

@@ -31,11 +31,12 @@ Public Class login
         Else
             If TextBox1.Text = "admin" Then
                 MsgBox("Login berhasil, Selamat datang " & TextBox1.Text & "!", MsgBoxStyle.Information, "Successfull Login")
-                presensi_kehadiran2.Show()
+                Menu_Admin.Show()
                 Me.Hide()
                 presensi_kehadiran2.DataGridView3.Visible = False
                 presensi_kehadiran2.DataGridView2.Visible = False
                 presensi_kehadiran2.DataGridView1.Visible = True
+                Menu_Admin.WindowState = FormWindowState.Maximized
             Else
                 MsgBox("Login berhasil, Selamat datang Staff !", MsgBoxStyle.Information, "Successfull Login")
                 Me.Hide()

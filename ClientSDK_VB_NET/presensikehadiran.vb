@@ -72,7 +72,7 @@ Public Class presensikehadiran
             GroupBox1.Visible = True
             If DataGridView1.CurrentRow.Index <> DataGridView1.NewRowIndex Then
 
-                Dim edit As String = "select nama, jenis_kelamin, tanggal_lahir, alamat, tlp1, tlp2, wa, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, keakraban, pelayanan_umat, pin, tempat_lahir, goldar, nama_buddhist, kelas_dhamma, seminar, donasi, no_kendaraan, jenis_kendaraan from user where pin =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & ""
+                Dim edit As String = "select nama, jenis_kelamin, DATE_FORMAT(tanggal_lahir, '%d/%m/%Y'), alamat, tlp1, tlp2, wa, email, kategori, check_all, pujabakti, meditasi, dana_makan, baksos, fung_shen, sunskul, bursa, keakraban, pelayanan_umat, pin, tempat_lahir, goldar, nama_buddhist, kelas_dhamma, seminar, donasi, no_kendaraan, jenis_kendaraan from user where pin =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & ""
                 xCommand = New MySqlCommand(edit, xConnection)
 
                 xReader = xCommand.ExecuteReader()

@@ -110,7 +110,7 @@ Partial Class presensi_kehadiran2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(9, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(255, 17)
         Me.Label1.TabIndex = 0
@@ -119,15 +119,15 @@ Partial Class presensi_kehadiran2
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(15, 278)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 278)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(863, 245)
+        Me.DataGridView1.Size = New System.Drawing.Size(1146, 353)
         Me.DataGridView1.TabIndex = 1
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(613, 216)
+        Me.Button1.Location = New System.Drawing.Point(908, 216)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(141, 23)
         Me.Button1.TabIndex = 2
@@ -137,7 +137,7 @@ Partial Class presensi_kehadiran2
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(613, 245)
+        Me.Button2.Location = New System.Drawing.Point(908, 245)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(141, 23)
         Me.Button2.TabIndex = 3
@@ -259,7 +259,7 @@ Partial Class presensi_kehadiran2
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Location = New System.Drawing.Point(77, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(213, 29)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(667, 412)
         Me.GroupBox1.TabIndex = 8
@@ -672,7 +672,7 @@ Partial Class presensi_kehadiran2
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(760, 216)
+        Me.Button6.Location = New System.Drawing.Point(1055, 216)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(103, 23)
         Me.Button6.TabIndex = 9
@@ -681,7 +681,7 @@ Partial Class presensi_kehadiran2
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(760, 245)
+        Me.Button7.Location = New System.Drawing.Point(1055, 245)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(103, 23)
         Me.Button7.TabIndex = 10
@@ -790,7 +790,7 @@ Partial Class presensi_kehadiran2
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(760, 187)
+        Me.Button8.Location = New System.Drawing.Point(1055, 187)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(103, 23)
         Me.Button8.TabIndex = 49
@@ -839,9 +839,9 @@ Partial Class presensi_kehadiran2
         'DataGridView3
         '
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(15, 278)
+        Me.DataGridView3.Location = New System.Drawing.Point(12, 278)
         Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(863, 247)
+        Me.DataGridView3.Size = New System.Drawing.Size(1146, 353)
         Me.DataGridView3.TabIndex = 53
         '
         'presensi_kehadiran2
@@ -849,7 +849,7 @@ Partial Class presensi_kehadiran2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(890, 531)
+        Me.ClientSize = New System.Drawing.Size(1170, 643)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView3)
         Me.Controls.Add(Me.DataGridView2)
@@ -863,12 +863,12 @@ Partial Class presensi_kehadiran2
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TB_ServerIP)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.TB_Memo)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "presensi_kehadiran2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

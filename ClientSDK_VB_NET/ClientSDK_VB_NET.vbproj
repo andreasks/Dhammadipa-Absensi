@@ -113,6 +113,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Absensi_Staff.Designer.vb">
+      <DependentUpon>Absensi_Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Absensi_Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="F_EasylinkSDKClient.Designer.vb">
       <DependentUpon>F_EasylinkSDKClient.vb</DependentUpon>
     </Compile>
@@ -129,6 +135,12 @@
       <DependentUpon>manual_absen.vb</DependentUpon>
     </Compile>
     <Compile Include="manual_absen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Admin.Designer.vb">
+      <DependentUpon>Menu_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Admin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -161,6 +173,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Absensi_Staff.resx">
+      <DependentUpon>Absensi_Staff.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_EasylinkSDKClient.resx">
       <DependentUpon>F_EasylinkSDKClient.vb</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="manual_absen.resx">
       <DependentUpon>manual_absen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Admin.resx">
+      <DependentUpon>Menu_Admin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
